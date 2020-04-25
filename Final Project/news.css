@@ -2,18 +2,6 @@
     background-color: #153449;
 }
 
-/* .search {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-} */
-
-/* .headLine {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-} */
-
 .container {
     vertical-align: middle;
 }
@@ -23,18 +11,9 @@
     flex-wrap: wrap;
 }
 
-
-/* img {
-    
-    max-width: 285px;
-} */
-
-/* .articles {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-} */
-
+.textPart {
+    background-color: whitesmoke;
+}
 
 * {
     box-sizing: border-box;
@@ -45,7 +24,7 @@
     font-size: 17px;
   }
   .articles {
-      border:  5px solid lightgray;
+      border:  3px solid lightslategray;
   }
   .news {
     position: relative;
@@ -101,3 +80,4 @@ input[type=button]:hover {
 input[type=text], select {
     width: 16%;
 }
+

@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/news.html");
 });
 
+app.route("/register").get(function(req,res) {
+  res.sendFile(__dirname + "/public/register.html");
+});
+
 app.listen(port, err => {
   console.log(`Listening on port: ${port}`);
 });

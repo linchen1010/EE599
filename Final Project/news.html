@@ -18,7 +18,7 @@
     <title>New's Browser</title>
 </head>
 <body>
-   
+<div class = textPart>
 <div class = Title>
     <h1 style="color: white; text-align: center; font-style: italic;">New's Browser</h1>
 </div>
@@ -41,14 +41,37 @@
         id="submit"
         onclick="submit()"
         />
-        <span class="loader text-center" id="loader"></span> 
-     <input
-        type="button"
-        value="HeadLineNews"
-        id="headLine"
-        onclick="headLine()"
-        />
+        
+        <input
+                type="button"
+                value="HeadLineNews"
+                id="headLine"
+                onclick="headLine()"
+            />
+        <!-- <form>
+         <br>
+            <select>
+                <option value="general">Select Category</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="general">General</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+              </select>
+              <select>
+                <option value="us">Select Country</option>
+                <option value="us">United State</option>
+                <option value="tw">TW</option>
+              </select>
+        </form> -->
+     <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
  <!-- </form> -->
+</div>
+
+<div class="custom-select" style="width:200px; ">
+  </div>
 </div>
 <div>
     <h1 id = "headLineTitle" style = "text-align: center">Top Headlines</h1> <br>
@@ -60,49 +83,6 @@
 <div class="container">
     <div class = "news-list"></div>
 </div>
-
-<!-- <script>
-    const searchFrom = document.querySelector('.search');
-    const input = document.querySelector('.input');
-    const newsList = document.querySelector('.news-list');
-
-    searchFrom.addEventListener('submit', retrieve)
-
-    function retrieve(e) {
-
-        if (input.value == '') {
-            alert('Input is empty!');
-        }
-
-        e.preventDefault()
-        
-        const apiKey = '504949294bc7419d83beebf27c708229'
-
-        let searchTopic = input.value;
-
-        let url = `http://newsapi.org/v2/everything?q=${searchTopic}&apiKey=${apiKey}`
-
-        fetch(url).then((res) => {
-            return res.json()
-        }).then((data)=> {
-            console.log(data);
-            data.articles.forEach(article =>{
-                let div = document.createElement('div');
-                let a = document.createElement('a');
-                a.setAttribute('href',article.url);
-                a.setAttribute('target', '_blank');
-                a.textContent = article.title;
-                div.appendChild(a);
-                newsList.appendChild(div);
-            })
-        }).catch((error)=>{
-            console.log(error)
-        })
-    
-
-        //console.log(searchTopic);
-    }
-</script> -->
 
 <script type="text/javascript" src="scriptNews.js"></script>
 
